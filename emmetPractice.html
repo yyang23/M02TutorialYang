@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>replit</title>
+  <link href="style.css" rel="stylesheet" type="text/css" />
+  
+  <style>
+    .class{
+      position: relative;
+      background-color: #fff;
+      width: 10px;      
+      height: 10px;
+    }
+  </style>
+</head>
+
+<body>  
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/emmet/2.3.6/emmet.cjs.js"></script>
+  <script src="script.js"></script>
+  <h1>Samples of emmet abbreviation</h1>
+  link 
+  <link rel="stylesheet" href="">
+  span
+  <span></span>
+  div
+  <div></div>
+  a
+  <a href=""></a>
+
+  button
+  <button></button>
+  
+  span.purple
+  <span class="purple"></span>
+  span#
+  <span id=""></span>
+
+  div.class-1.class-2# <br>
+  <div class="class-1 class-2" id=""></div>
+  <div class=""></div>
+
+  button[type="button"]  
+  <button type="button"></button>
+
+  [data-selected]
+  <div data-selected=""></div>
+
+  [data-selected].active
+  <div data-selected="aaa" class="active">aaa</div>
+  
+  <div class="purple"><span class="cyan"></span></div>
+  <header>
+    <nav>
+      <ul>
+        <li>Line1</li>
+        <li>Line2</li>
+        <li>Line3</li>
+      </ul>
+    </nav>
+  </header>
+
+  header>nav>ul>li*3{sss}
+  <header>
+    <nav>
+      <ul>
+        <li>sss</li>
+        <li>sss</li>
+        <li>sss</li>
+      </ul>
+    </nav>
+  </header>
+
+  header>nav>ul>li*3.class-${List item $}
+  <header>
+    <nav>
+      <ul>
+        <li class="class-1">List item 1</li>
+        <li class="class-2">List item 2</li>
+        <li class="class-3">List item 3</li>
+      </ul>
+    </nav>
+  </header>  
+  
+  header>nav>ul>li*3.class-${List item $$}
+  <header>
+    <nav>
+      <ul>
+        <li class="class-1">List item 01</li>
+        <li class="class-2">List item 02</li>
+        <li class="class-3">List item 03</li>
+      </ul>
+    </nav>
+  </header>
+
+  header+main+footer
+  <header></header>
+  <main></main>
+  <footer></footer>
+  
+  header>nav^main+footer
+  <header>
+    <nav></nav>
+  </header>
+  <main></main>
+  <footer></footer>
+
+  (header>nav)+main+footer
+  <header>
+    <nav></nav>
+  </header>
+  <main></main>
+  <footer></footer>
+
+  (header>h2{Heading}+nav>ol>li*5>a{link $})+main+footer
+  <header>
+    <h2>Heading</h2>
+    <nav>
+      <ol>
+        <li><a href="">link 1</a></li>
+        <li><a href="">link 2</a></li>
+        <li><a href="">link 3</a></li>
+        <li><a href="">link 4</a></li>
+        <li><a href="">link 5</a></li>
+      </ol>
+    </nav>
+  </header>
+  <main></main>
+  <footer></footer>
+
+  form:post
+  <form action="" method="post"></form>
+
+  form:post>.group>input:b
+  <form action="" method="post">
+    <div class="group"><input type="button" value=""></div>
+  </form>
+
+  form:post>(.group>label+input:text)+(.group>label+input:number)  
+  <form action="" method="post">
+    <div class="group"><label for=""></label><input type="text" name="" id=""></div>
+    <div class="group"><label for=""></label><input type="number" name="" id=""></div>
+  </form>
+
+
+
+</body>
+
+</html>
